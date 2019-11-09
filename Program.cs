@@ -20,9 +20,8 @@ namespace SimpleCalculatorGenerator
         };
         static void Main(string[] args)
         {
-            if (Directory.Exists(dirName))
-                Directory.Delete(dirName);                
-            Directory.CreateDirectory(dirName);
+            if (!Directory.Exists(dirName))                
+                Directory.CreateDirectory(dirName);
 
             programmCode = new StreamWriter("Results/Program.cs");
 
