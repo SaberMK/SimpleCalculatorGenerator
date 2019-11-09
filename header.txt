@@ -1,0 +1,16 @@
+﻿using System;
+
+namespace MyFirstCalculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please, enter first number:");
+            var firstNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please, enter sign of math operation:");
+            var sign = Console.ReadLine()[0];
+
+            Console.WriteLine("Please, enter first number:");
+            var secondNumber = int.Parse(Console.ReadLine());
